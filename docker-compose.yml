@@ -20,7 +20,7 @@ services:
     restart: unless-stopped
     command: php artisan queue:work
     environment:
-      IS_API_WORKER: "true"
+      IS_WORKER: "true"
     env_file:
       - ./backend/.env
     depends_on:
